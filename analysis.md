@@ -29,15 +29,12 @@ The Spambase dataset was first preprocessed using standard scaling and normaliza
 
 ### c. **Isomap**
 - **Visualization:**
+-  ![ISOMAP](https://github.com/vans1836/ML_LAB/blob/main/Screenshot%202024-09-30%20at%2011.11.25%20PM.png)
    
 
 ### d. **Multidimensional Scaling (MDS)**
 - **Visualization:**
-    - Provide the 2D or 3D visualizations for MDS output.
-    - Example:
-    ```python
-    # Add the image or plot here when you generate it in the notebook
-    ```
+  ![MDS](https://github.com/vans1836/ML_LAB/blob/main/Screenshot%202024-09-30%20at%2011.11.45%20PM.png)
 
 ---
 
@@ -47,36 +44,20 @@ After applying each dimensionality reduction technique, K-means clustering was u
 
 ### a. **Singular Value Decomposition (SVD)**
 - **Clustering Result:** 
-    - Provide K-means clustering results and performance metrics for SVD.
-    - Example:
-    ```python
-    # Add the result of the clustering evaluation here
-    ```
+    SVD Silhouette Score: 0.8904858999224924
 
 ### b. **Principal Component Analysis (PCA)**
 - **Clustering Result:** 
-    - Provide K-means clustering results and performance metrics for PCA.
-    - Example:
-    ```python
-    # Add the result of the clustering evaluation here
-    ```
+  PCA Silhouette Score: 0.8904860456690384
+   
 
 ### c. **Isomap**
 - **Clustering Result:** 
-    - Provide K-means clustering results and performance metrics for Isomap.
-    - Example:
-    ```python
-    # Add the result of the clustering evaluation here
-    ```
+  Isomap Silhouette Score: 0.678171869255203
 
 ### d. **Multidimensional Scaling (MDS)**
 - **Clustering Result:** 
-    - Provide K-means clustering results and performance metrics for MDS.
-    - Example:
-    ```python
-    # Add the result of the clustering evaluation here
-    ```
-
+   MDS Silhouette Score: 0.27359770497062497
 ---
 
 ## 4. Discussion
@@ -110,3 +91,7 @@ After applying each dimensionality reduction technique, K-means clustering was u
     - Preserves pairwise distances between points.
 - **Limitations:**
     - Can be slow on large datasets
+ 
+      ## Analysis
+Both SVD and PCA performed excellently in clustering the Spambase dataset, indicating their effectiveness in preserving the underlying data structure during dimensionality reduction. Isomap provided moderate performance, while MDS struggled significantly, demonstrating its limitations in this context.
+
